@@ -1,0 +1,47 @@
+{% comment %} This is just a test file -- if we need a front end, we can use Django templates to interact with the API {% endcomment %}
+
+{% comment %} {% load static %}
+
+{% comment %} <!DOCTYPE html>
+<html>
+<head>
+  <title>Quiz App</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+  <style>
+
+    body {
+      font-family: Arial, sans-serif;
+      padding: 20px;
+    }
+    .container {
+      max-width: 500px;
+    }
+    .quiz-option {
+      margin-bottom: 10px;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>Quiz App</h1>
+  
+    <div id="quizContainer">
+      <h2>{{ quiz.question }}</h2>
+      {% for option in quiz.options %}
+        <div class="quiz-option">
+          <label class="form-check-label">
+            <input class="form-check-input" type="radio" name="answer" value="{{ forloop.counter0 }}">
+            {{ option }}
+          </label>
+        </div>
+      {% endfor %}
+    </div>
+
+    <button id="submitBtn" class="btn btn-primary">Submit Answer</button>
+  </div> {% endcomment %}
+  
+  {% comment %} <script src="{% static 'script.js' %}"></script> {% endcomment %}
+  {% comment %} <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+</body>
+</html> {% endcomment %}
